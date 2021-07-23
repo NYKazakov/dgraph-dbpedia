@@ -9,7 +9,7 @@ fi
 
 data=$(cd "$1"; pwd)
 bulk=$(cd "$2"; pwd)
-schema=$(cd "$3"; pwd)
+schema="$3"
 
 mkdir -p $bulk
 cp dgraph.bulk.load.sh $bulk/
